@@ -1,0 +1,41 @@
+
+
+
+
+// =================================
+// Mixin
+// =================================
+
+@mixin sp {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin tb {
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin pc {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
+@function pxTovw($px) {
+  $vw: $px / 100 * 1vw;
+  @return $vw;
+}
+
+@mixin defaultSection {
+  width: 100vw;
+  height: 100vh;
+  // overflow: hidden;
+}
+
+@mixin fullContent {
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,14 @@
+
+
+@charset "utf-8";
+
+// --------------------
+// .room
+// --------------------
+
+.room {
+  @include defaultSection;
+  &-canvas {
+    @include fullContent;
+  }
+}
