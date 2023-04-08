@@ -3,7 +3,7 @@ import Sizes from './Utils/Sizes';
 import Time from './Utils/Time';
 import Resource from './Utils/Resources';
 import assets from "./Utils/assets"
-
+import RoomAnimation from './Animation/RoomAnimation';
 import Camera from './Camera';
 import Renderer from './Renderer';
 
@@ -22,6 +22,12 @@ class Room {
     this.renderer = new Renderer()
     this.resources = new Resource(assets)
     this.world = new World()
+    this.isAlready = false
+    
+    this.resources.on("ready", () => {
+      this.isAlready = true
+      this.roomAnimation = new RoomAnimation()
+    })
 
     this.time.on("update", () => {
       this.update()
@@ -34,6 +40,9 @@ class Room {
   update() {
     this.camera.update()
     this.renderer.update()
+    if(this.isAlready) {
+      this.roomAnimation.update()
+    }
   }
   resize() {
     this.camera.resize()

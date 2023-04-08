@@ -1,0 +1,33 @@
+.u-hidden {
+    display: none;
+}
+.u-paragraph {
+    span {
+        color: $colorPrimary;
+        font-weight: bold;
+        background-color: rgba(255, 0, 0, 0.137);
+        padding: 4px 12px;
+        border-radius: 4px;
+    }
+    b {
+        color: $colorPrimary;
+        font-weight: bold;
+        font-size: larger;
+    }
+    strong {
+        color: $colorPrimary;
+        font-weight: bold;
+        color: rgba(49, 68, 239, 0.874);
+        // font-size: larger;
+        font-size: small;
+        // padding: 4px 12px;
+        border-radius: 4px;
+    }
+    a {
+        color: $colorPrimary;
+        font-weight: bold;
+        background-color: rgba(255, 0, 0, 0.137);
+        padding: 4px 12px;
+        border-radius: 4px;
+    }
+}

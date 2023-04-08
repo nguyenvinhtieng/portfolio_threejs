@@ -2,6 +2,7 @@ import * as THREE from 'three'
 import Room from '../Room.js'
 import RoomModel from './RoomModel.js'
 import Enviroment from './Enviroment.js'
+import Floor from './Floor.js'
 
 class World {
   constructor() {
@@ -14,6 +15,7 @@ class World {
     this.resources.on("ready", () => {
       this.enviroment = new Enviroment()
       this.roomModel = new RoomModel()
+      this.floor = new Floor()
       console.log("Created room");
     })
     

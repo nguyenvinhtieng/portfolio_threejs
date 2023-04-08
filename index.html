@@ -5,11 +5,114 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vinh Tieng</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
   </head>
   <body>
-    <div class="room">
+    <h1 class="u-hidden">Vinh Tieng Portfolio</h1>
+    <div class="hero">
+      <svg class="hero__mouse"></svg>
       <canvas class="room-canvas"></canvas>
+      <div class="hero-01">
+        <div class="hero-wrapper">
+          <div class="hero-inner">
+            <div class="hero__infor">
+              <h1 class="hero__heading">
+                Welcome to <br> my portfolio!
+                
+              </h1>
+            </div>
+            <!-- <div class="about__image">
+              <img src="https://source.unsplash.com/random" alt="Tieng Vinh" class="about__img">
+            </div> -->
+          </div>
+        </div>
+        
+      </div>
     </div>
+    
+    <div class="about">
+      <div class="about-wrapper">
+        <div class="about-inner">
+          <div class="about__info">
+            <h1 class="about__heading">Hi there,</h1>
+            <p class="about__paragraph u-paragraph">My name is <b>Tieng</b>, and I have been working as a <span>Frontend Engineer</span> for one year. My passion is creating outstanding websites that cater to human needs. Presently, I am concentrating on enhancing my coding skills in ReactJs and VueJs. On the other hand, I have knowledge of back-end development, including APIs and frameworks such as ExpressJs and Larevel. I hope to become a full-stack developer as soon as possible, possibly within the next 5-7 years (lol!). During my free time, I enjoy reading books, playing football, and swimming, which helps me unwind after a long day of work. 🥳</p>
+          </div>
+          <div class="about__img">
+            <img src="/public/images/avatar.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="experience">
+      <div class="experience-wrapper">
+        <div class="experience-inner">
+          <h2 class="experience__heading">My education and experiences</h2>
+          <div class="experience__body js-experience-body">
+            <div class="experience__tabs">
+              <div class="experience__tab active">
+                <h3 class="experience__name">TDT University</h3>
+                <time class="experienct__date">2019~2023</time>
+              </div>
+              <div class="experience__tab">
+                <h3 class="experience__name">LaichiLLC</h3>
+                <time class="experienct__date">2019~2023</time>
+              </div>
+              <span class="experience__tab-background"></span>
+            </div>
+            <div class="experience__contents">
+              <div class="experience__content active">
+                <div class="experience__content-logo">
+                  <img src="/public/images/logo_tdt.png" alt="Logo Ton Tuc Thang University">
+                </div>
+                <span class="experience__company-name">Ton Duc Thang University</span>
+                <ul class="experience__company-des">
+                  <li class="experience__company-des--item">Pursued a Bachelor's degree in Software Engineering with a focus on programming, algorithms, and software design.</li>
+                  <li class="experience__company-des--item">Achieved a GPA of 8.0/10.0</li>
+                  <li class="experience__company-des--item u-paragraph">
+                    Has won several competitions, including: <br>
+                    <a href="https://www.youtube.com/watch?v=lJ1e18IYLf4&t=16116s" target="_bla
+                    "> Recursion-2022 <sup><strong>1st</strong></sup></a> , 
+                    <a href="https://www.facebook.com/iconclub.it.tdtu/photos/a.2088082104641173/3983512311764800" target="_bla
+                    "> Recursion-2021 <sup><strong>3rd</strong></sup></a></li>
+                  <li class="experience__company-des--item">Worked as a frontend developer for a local startup, gaining practical experience with HTML, CSS, and JavaScript.</li>
+                </ul>
+              </div>
+              <div class="experience__content">
+                <div class="experience__content-logo">
+                  <img src="/public/images/logo_laichi.png" alt="Logo LAICHI LLC">
+                </div>
+                <span class="experience__company-name">LAICHI LLC</span>
+                <ul class="experience__company-des">
+                  <li class="experience__company-des--item">Posision: Frontend Developer</li>
+                  <li class="experience__company-des--item u-paragraph">Proficient in 
+                    <span>HTML</span>,
+                    <span>CSS</span>,
+                    <span>JavaScript</span>,
+                    <span>Vue.js</span>,
+                    <span>Nuxt.js</span>,
+                    <span>Next.js</span>,
+                    <span>jQuery</span>,
+                    <span>GIT</span>,
+                    <span>Photoshop</span>,
+                    <span>XD</span> and other related technologies.</li>
+                  <li class="experience__company-des--item">Responsible for developing and maintaining the frontend of various projects.</li>
+                  <li class="experience__company-des--item">Collaborated with cross-functional teams to deliver high-quality products.</li>
+                  <li class="experience__company-des--item">Continuously learning and improving skills to stay up-to-date with the latest frontend technologies and design tools.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="galaxy">
+      <canvas class="galaxy-canvas"></canvas>
+    </div> -->
     <script type="module" src="/main.js"></script>
   </body>
 </html>
