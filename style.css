@@ -75,6 +75,16 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  position: relative;
+}
+.about .sphere {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 50px;
+  align-items: center;
 }
 .about-wrapper {
   width: 100%;
@@ -142,10 +152,25 @@ body {
 .experience__tabs {
   width: fit-content;
   position: relative;
+  background: rgba(60, 60, 60, 0.1);
+  border-radius: 8px;
 }
 .experience__tab {
   cursor: pointer;
   padding: 10px 20px;
+  position: relative;
+}
+.experience__tab:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -30px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #000;
 }
 .experience__tab.active {
   color: #8e32e4;

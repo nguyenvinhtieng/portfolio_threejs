@@ -60,6 +60,16 @@
 // about
 .about {
     @include defaultSection;
+    position: relative;
+    .sphere {
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 50px;
+        align-items: center;
+    }
     &-wrapper {
         @include fullContent;
         display: flex;
@@ -127,10 +137,27 @@
     &__tabs {
         width: fit-content;
         position: relative;
+        background: rgba(60, 60, 60, 0.1);
+        // height: fit-content;
+        // border-radius: ;
+        border-radius: 8px;
     }
     &__tab {
         cursor: pointer;
         padding: 10px 20px;
+        position: relative;
+        &:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: -30px;
+            transform: translateY(-50%);
+            width: 0; 
+            height: 0; 
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-left: 10px solid #000;
+        }
         &.active {
             color: $colorPrimary;
         }
